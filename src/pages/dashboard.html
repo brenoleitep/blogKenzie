@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/dashboard.css" />
+    <link
+      rel="shortcut icon"
+      href="/src/assets/kenzielogo.jpg"
+      type="image/x-icon"
+    />
+    <title>Kenzie Blog</title>
+  </head>
+  <body class="body__dashboard">
+    <div class="bg__modal">
+      <div class="modal">
+        <h2>Editar</h2>
+
+        <form class="form__modal">
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            class="form__modal--text"
+            placeholder="Estou mudando meu comentário"
+          ></textarea>
+          <button type="submit" class="form__modal--btn">Enviar</button>
+        </form>
+        <span class="close__modal">Close Modal</span>
+      </div>
+    </div>
+
+    <div class="bg__modal bg__modalDelet">
+      <div class="modal">
+        <h2>Deseja deletar esse post?</h2>
+
+        <form class="form__modal form__modal--del">
+          <button type="submit" class="form__modal--del">Deletar</button>
+        </form>
+        <span class="close__modal close__modal--del">Close Modal</span>
+      </div>
+    </div>
+
+    <header class="body__dashboard--header">
+      <div class="header__dashboard--div"></div>
+
+      <div class="header__dashboard--log">
+        <span class="span__logout">Logout</span>
+      </div>
+    </header>
+
+    <main class="main__dashboard">
+      <form class="form__dash">
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          class="main__dashboard--text"
+          placeholder="No que está pensando?
+          "
+        ></textarea>
+        <button type="submit" class="main__dashboard--btn">+</button>
+      </form>
+
+      <section class="secao__post">
+        <ul class="secao__post--ul"></ul>
+      </section>
+    </main>
+
+    <script type="module" src="../js/dashboard.js"></script>
+  </body>
+</html>

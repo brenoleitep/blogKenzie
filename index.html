@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <link rel="shortcut icon" href="/src/assets/kenzielogo.jpg" type="image/x-icon">
+    <title>Kenzie Blog</title>
+  </head>
+  <body class="body--login">
+    <main class="main--login">
+      <div class="div--login">
+        <h1>Entrar</h1>
+
+        <form class="form--login">
+          <input
+            type="text"
+            placeholder="Email"
+            class="form__login--inputText inputText__email"
+          />
+
+          <input
+            type="password"
+            placeholder="Senha"
+            class="form__login--inputText inputText__pass"
+          />
+
+          <input type="submit" value="Entrar" class="form__login--submit" />
+
+          <span
+            ><a href="./src/pages/cadastre.html">Ainda não tenho cadastro</a></span
+          >
+        </form>
+      </div>
+    </main>
+    <script type="module" src="./src/js/login.js"></script>
+    <script type="module" src="./src/js/api.js"></script>
+  </body>
+</html>
